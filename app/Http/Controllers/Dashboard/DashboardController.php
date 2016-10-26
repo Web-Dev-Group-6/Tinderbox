@@ -13,11 +13,25 @@ class DashboardController extends Controller
     {
     	return view('dashboard.index');
     }
-
     public function information()
     {
     	return view('dashboard.information');
     }
+    public function map()
+    {
+    	return view('dashboard.map')
+    }
+    public function qr()
+    {
+    	return view('dashboard.qr')
+    }
+    public function schedule()
+    {
+    	return view('dashboard.schedule')
+    }
+    public function security()
+    {
+    	return view('dashboard.security')
 
     public function login()
     {
