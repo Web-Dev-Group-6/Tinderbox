@@ -1,7 +1,6 @@
 # Installation
-    git clone https://github.com/Web-Dev-Group-6/Tinderbox.git
     composer install
-    mv .env.example .env
+    cp .env.example .env
     composer artisan key:generate
 
 # Laravel PHP Framework
