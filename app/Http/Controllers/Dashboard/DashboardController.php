@@ -32,5 +32,14 @@ class DashboardController extends Controller
     public function security()
     {
     	return view('dashboard.security')
+
+    public function login()
+    {
+    	return view('dashboard.login');
+    }
+
+    public function registration()
+    {
+    	return view('dashboard.registration');
     }
 }

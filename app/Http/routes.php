@@ -18,4 +18,7 @@ Route::group(array('namespace' => 'Dashboard', 'middleware' => 'web'), function(
 	Route::get('/', array('as' => 'dashboard.map', 'uses' => 'DashboardController@map'));
 	Route::get('/', array('as' => 'dashboard.security', 'uses' => 'DashboardController@security'));
 	Route::get('/information', array('as' => 'dashboard.information', 'uses' => 'DashboardController@information'));
+	Route::get('/login', array('as' => 'dashboard.login', 'uses' => 'DashboardController@login'));
+	Route::get('/registration', array('as' => 'dashboard.registration', 'uses' => 'DashboardController@registration'));
+	Route::get('/messages', array('as' => 'dashboard.messages', 'uses' => 'DashboardController@messages'));
 });
