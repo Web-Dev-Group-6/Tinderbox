@@ -2,6 +2,7 @@
     composer install
     cp .env.example .env
     composer artisan key:generate
+    sass --watch public/scss:public/css
 
 # Laravel PHP Framework
 
