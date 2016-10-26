@@ -2,7 +2,7 @@
 
 @section('body')
 <div class="col-xs-8 nopadding headline">
-				<h1>Map</h1>
+				<h1>Call Security</h1>
 			</div>
 		</div>
 		<div class="row">
@@ -12,8 +12,10 @@
 		</div>
 	</div>
 
-<center><h2>Picture of the map</h2></center>
-<div class="map">
-	<center> <img src="{ asset('images/map.PNG') }}" width="100%" height="100%" max-width="400" max-height="400"> </center>
-</div>
+<!--<div class="fa-chain-broken ">
+	<h3>Press the picture below to call security</h3>
+</div>-->
+
+<center><h2>Press the picture below to call security</h2></center>
+<center><img onclick="emergencyAlert()" src="images/security-icon-small.svg"/> </center>
 @stop
