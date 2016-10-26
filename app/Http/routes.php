@@ -14,4 +14,5 @@
 Route::group(array('namespace' => 'Dashboard', 'middleware' => 'web'), function() {
 	Route::get('/', array('as' => 'dashboard.index', 'uses' => 'DashboardController@index'));
 	Route::get('/information', array('as' => 'dashboard.information', 'uses' => 'DashboardController@information'));
+	Route::get('/profile', array('as' => 'dashboard.profile', 'uses' => 'DashboardController@profile'));
 });
