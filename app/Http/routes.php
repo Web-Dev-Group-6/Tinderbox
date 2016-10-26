@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::group(array('namespace' => 'Dashboard', 'middleware' => 'web'), function() {
+	Route::get('/', array('as' => 'dashboard.index', 'uses' => 'DashboardController@index'));
 });
