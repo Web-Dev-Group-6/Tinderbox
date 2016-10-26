@@ -26,22 +26,23 @@ class DashboardController extends Controller
 
     public function map()
     {
-    	return view('dashboard.map')
+    	return view('dashboard.map');
     }
 
     public function qr()
     {
-    	return view('dashboard.qr')
+    	return view('dashboard.qr');
     }
 
     public function schedule()
     {
-    	return view('dashboard.schedule')
+    	return view('dashboard.schedule');
     }
 
     public function security()
     {
-    	return view('dashboard.security')
+    	return view('dashboard.security');
+    }
 
     public function login()
     {
