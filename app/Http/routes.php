@@ -13,16 +13,13 @@
 
 Route::group(array('namespace' => 'Dashboard', 'middleware' => 'web'), function() {
 	Route::get('/', array('as' => 'dashboard.index', 'uses' => 'DashboardController@index'));
-	Route::get('/', array('as' => 'dashboard.schedule', 'uses' => 'DashboardController@schedule'));
-	Route::get('/', array('as' => 'dashboard.qr', 'uses' => 'DashboardController@qr'));
-	Route::get('/', array('as' => 'dashboard.map', 'uses' => 'DashboardController@map'));
-	Route::get('/', array('as' => 'dashboard.security', 'uses' => 'DashboardController@security'));
+	Route::get('/schedule', array('as' => 'dashboard.schedule', 'uses' => 'DashboardController@schedule'));
+	Route::get('/qr', array('as' => 'dashboard.qr', 'uses' => 'DashboardController@qr'));
+	Route::get('/map', array('as' => 'dashboard.map', 'uses' => 'DashboardController@map'));
+	Route::get('/security', array('as' => 'dashboard.security', 'uses' => 'DashboardController@security'));
 	Route::get('/information', array('as' => 'dashboard.information', 'uses' => 'DashboardController@information'));
-<<<<<<< HEAD
 	Route::get('/profile', array('as' => 'dashboard.profile', 'uses' => 'DashboardController@profile'));
-=======
 	Route::get('/login', array('as' => 'dashboard.login', 'uses' => 'DashboardController@login'));
 	Route::get('/registration', array('as' => 'dashboard.registration', 'uses' => 'DashboardController@registration'));
 	Route::get('/messages', array('as' => 'dashboard.messages', 'uses' => 'DashboardController@messages'));
->>>>>>> master
 });
