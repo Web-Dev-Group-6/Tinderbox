@@ -23,4 +23,9 @@ class DashboardController extends Controller
     {
     	return view('dashboard.login');
     }
+
+    public function registration()
+    {
+    	return view('dashboard.registration');
+    }
 }
