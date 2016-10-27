@@ -17,5 +17,5 @@
 </div>-->
 
 <center><h2>Press the picture below to call security</h2></center>
-<center><img onclick="emergencyAlert()" src="images/security-icon-small.svg"/> </center>
+<center><img onclick="emergencyAlert()" src="{{ asset('img/security-icon-small.svg') }}"/> </center>
 @stop

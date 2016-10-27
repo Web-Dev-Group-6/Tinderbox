@@ -15,8 +15,8 @@
 <body class="{{ str_replace('.', ' ', Route::currentRouteName()) }} @yield('body-class', '')">
 <header>
 	<div class="container-fluid">
-		<a href="menu.html"><div id="logo" class="col-xs-2"><img src="{{ asset('img/tinderbox_logowhite_small.svg') }}" alt="logo"></div></a>
-		<a href="profile.html"><div id="user" class="glyphicon glyphicon-user"></div></a>
+		<a href="{{ route('dashboard.index') }}"><div id="logo" class="col-xs-2"><img src="{{ asset('img/tinderbox_logowhite_small.svg') }}" alt="logo"></div></a>
+		<a href="{{ route('dashboard.profile') }}"><div id="user" class="glyphicon glyphicon-user"></div></a>
 	</div>
 </header>
 
@@ -26,15 +26,15 @@
 				<div class="dropdown">
 			  		<button onclick="toggleDropdown()" class="dropbtn"><i class="fa fa-bars" aria-hidden="true"></i></button>
 			  		<div id="myDropdown" class="dropdown-content">
-			    		<a href="schedule.html">SCHEDULE</a>
-			    		<a href="messages.html">MESSAGES</a>
-			    		<a href="qr.html">QR CODES</a>
-			    		<a href="information.html">INFO</a>
-			    		<a href="map.html">FESTIVAL MAP</a>
-			    		<a href="security.html" class="call">CALL SECURITY</a>
+			    		<a href="{{ route('dashboard.schedule') }}">SCHEDULE</a>
+			    		<a href="{{ route('dashboard.messages') }}">MESSAGES</a>
+			    		<a href="{{ route('dashboard.qr') }}">QR CODES</a>
+			    		<a href="{{ route('dashboard.information') }}">INFO</a>
+			    		<a href="{{ route('dashboard.map') }}">FESTIVAL MAP</a>
+			    		<a href="{{ route('dashboard.security') }}" class="call">CALL SECURITY</a>
 			  		</div>
 				</div>
-				<button id="back-link" class="backbutton">Back</button>
+				<button onclick="window.location.href='{{ URL::previous() }}'" class="backbutton">Back</button>
 			</div>
 
 	@section('body')

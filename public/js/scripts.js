@@ -16,8 +16,8 @@ window.onclick = function(event) {
   }
 }
 
-jQuery(document).ready(function() {
+/*jQuery(document).ready(function() {
   jQuery('#back-link').click(function() {
      history.go(-1) 
    });
-});
+});*/

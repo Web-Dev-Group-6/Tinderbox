@@ -39,8 +39,8 @@
 			<input type="text" name="workpartner" placeholder="I like to work with (name)">
 
 		<div class="pagebuttons">
-			<div class="back"><a href="<?php echo $url = route('dashboard.registration1'); ?>">Back</a></div>
-			<div class="next"><a href="<?php echo $url = route('dashboard.index'); ?>">Finish</a></div>
+			<div class="back"><a href="{{ URL::previous() }}">Back</a></div>
+			<div class="next"><a href="{{ route('dashboard.index') }}">Finish</a></div>
 		</div>
 		</form>
 	</div>
