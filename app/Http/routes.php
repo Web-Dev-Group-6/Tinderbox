@@ -21,5 +21,7 @@ Route::group(array('namespace' => 'Dashboard', 'middleware' => 'web'), function(
 	Route::get('/profile', array('as' => 'dashboard.profile', 'uses' => 'DashboardController@profile'));
 	Route::get('/login', array('as' => 'dashboard.login', 'uses' => 'DashboardController@login'));
 	Route::get('/registration', array('as' => 'dashboard.registration', 'uses' => 'DashboardController@registration'));
+	Route::get('/registration1', array('as' => 'dashboard.registration1', 'uses' => 'DashboardController@registration1'));
+	Route::get('/registration2', array('as' => 'dashboard.registration2', 'uses' => 'DashboardController@registration2'));
 	Route::get('/messages', array('as' => 'dashboard.messages', 'uses' => 'DashboardController@messages'));
 });

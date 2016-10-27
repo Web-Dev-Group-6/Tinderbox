@@ -14,7 +14,7 @@
 		<form>
 			<input type="email" name="email" placeholder="Email">
 			<input type="password" name="password" placeholder="Password">
-			<div class="submit"><a href="registration1.html">Register</a></div>
+			<div class="submit"><a href="<?php echo $url = route('dashboard.registration1'); ?>">Register</a></div>
 		</form>
 	</div>
 <footer>

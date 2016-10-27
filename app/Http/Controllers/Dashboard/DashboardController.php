@@ -53,4 +53,12 @@ class DashboardController extends Controller
     {
     	return view('dashboard.registration');
     }
+    public function registration1()
+    {
+        return view('dashboard.registration1');
+    }
+    public function registration2()
+    {
+        return view('dashboard.registration2');
+    }
 }
