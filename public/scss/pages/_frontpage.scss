@@ -1,0 +1,25 @@
+.gradient-background {
+	@include gradient-background($secondary-color-rosa);
+}
+
+.news {
+	position: relative;
+	margin-bottom: 25px;
+	margin-top: 15px; 
+	img {
+		width: 100%; 
+	}
+	h4 {
+		font-family: "eveleth-regular";
+		bottom: 0;
+		color: #fff9f4;
+		padding-left: 10px; 
+	}
+	p {
+		color: #fff9f4;
+		padding-left: 10px;
+		font-size: 16px;
+		line-height: 1.2; 
+	}
+
+}
