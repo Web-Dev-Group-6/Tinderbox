@@ -27,7 +27,7 @@
 			<p>Upload image</p>
 		</div>
 		<div class="pagebuttons">
-			<div class="next"><a href="<?php echo $url = route('dashboard.registration2'); ?>">Next</a></div>
+			<div class="next"><a href="{{ route('dashboard.registration2') }}">>Next</a></div>
 		</div>
 		</form>
 	</div>

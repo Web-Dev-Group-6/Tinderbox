@@ -14,6 +14,6 @@
 
 <center><h2>Picture of the map</h2></center>
 <div class="map">
-	<center> <img src="{ asset('images/map.PNG') }}" width="100%" height="100%" max-width="400" max-height="400"> </center>
+	<center> <img src="{{ asset('img/map.png') }}" width="100%" height="100%" max-width="400" max-height="400"> </center>
 </div>
 @stop

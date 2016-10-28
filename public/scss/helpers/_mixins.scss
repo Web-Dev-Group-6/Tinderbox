@@ -9,3 +9,10 @@
 	width: 100%;
 	margin-bottom: 0;
 }
+@mixin box-sizing ($box-sizing) {
+	box-sizing: $box-sizing;
+	webkit-box-sizing: $box-sizing;
+	-moz-box-sizing: $box-sizing;
+	-ms-box-sizing: $box-sizing; 
+  	
+}

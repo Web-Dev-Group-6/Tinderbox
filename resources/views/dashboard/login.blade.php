@@ -10,7 +10,7 @@
 
 <div id="form-main">
   <div id="form-div">
-    <form class="form" id="form1" action="menu.html">
+    <form autocomplete="off" class="form" id="form1" action="{{ route('dashboard.index') }}">
       
       <p class="email">
         <input name="email" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="E-mail" id="email" />
@@ -26,14 +26,10 @@
         <div class="ease"></div>
       </div>
 
-      <div class="signup">
-        <input type="signup" value="SIGN UP" id="signup"/> 
-      </div>
-
     </form>
 
   <div class="signup">
-    <button id="signup" onclick="javascript:location.href='registration.html'">SIGN UP</button>
+    <button id="signup" onclick="window.location.href='{{ route('dashboard.registration') }}'">SIGN UP</button>
   </div>
   </div>
 

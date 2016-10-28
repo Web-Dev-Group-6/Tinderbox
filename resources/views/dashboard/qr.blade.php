@@ -16,7 +16,7 @@
 	<div class="container">
 		<center>
 			<h3>Check-In:</h3>
-			<img src="images/qr-codes.png" class="qr-code">
+			<img src="{{ asset('img/qr-codes.png') }}" class="qr-code">
 		</center>
 	</div>
 @stop

@@ -12,7 +12,8 @@
 */
 
 Route::group(array('namespace' => 'Dashboard', 'middleware' => 'web'), function() {
-	Route::get('/', array('as' => 'dashboard.index', 'uses' => 'DashboardController@index'));
+	Route::get('/', array('as' => 'dashboard.login', 'uses' => 'DashboardController@login'));
+	Route::get('/index', array('as' => 'dashboard.index', 'uses' => 'DashboardController@index'));
 	Route::get('/schedule', array('as' => 'dashboard.schedule', 'uses' => 'DashboardController@schedule'));
 	Route::get('/qr', array('as' => 'dashboard.qr', 'uses' => 'DashboardController@qr'));
 	Route::get('/map', array('as' => 'dashboard.map', 'uses' => 'DashboardController@map'));
