@@ -13,24 +13,18 @@
         <form class="form-horizontal" role="form" method="POST" action="{{ url('/login') }}">
             {{ csrf_field() }}
 
+            @if (count($errors))
+                @foreach($errors->all() as $error)
+                    <p style="color: red">{{ $error }}</p>
+                @endforeach
+            @endif
+
             <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
                 <input id="email" type="email" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" name="email" placeholder="E-mail">
-
-                @if ($errors->has('email'))
-                    <span class="help-block">
-                        <strong>{{ $errors->first('email') }}</strong>
-                    </span>
-                @endif
             </div>
 
             <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
                 <input id="password" type="password" class="validate[required,custom[password]] feedback-input" name="password" placeholder="Password">
-
-                @if ($errors->has('password'))
-                    <span class="help-block">
-                        <strong>{{ $errors->first('password') }}</strong>
-                    </span>
-                @endif
             </div>
 
             <div class="form-group">
