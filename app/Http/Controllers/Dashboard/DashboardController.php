@@ -9,6 +9,11 @@ use App\Http\Controllers\Controller;
 
 class DashboardController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function index()
     {
     	return view('dashboard.index');
@@ -44,7 +49,7 @@ class DashboardController extends Controller
     	return view('dashboard.security');
     }
 
-    public function login()
+    /*public function login()
     {
     	return view('dashboard.login');
     }
@@ -62,7 +67,7 @@ class DashboardController extends Controller
     public function registration2()
     {
         return view('dashboard.registration2');
-    }
+    }*/
 
     public function messages()
     {
