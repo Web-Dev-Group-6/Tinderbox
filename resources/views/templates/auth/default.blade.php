@@ -13,6 +13,7 @@
     
 </head>
 <body class="{{ str_replace('.', ' ', Route::currentRouteName()) }} @yield('body-class', '')">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <header>
     <div class="container-fluid">
         <a href="{{ route('dashboard.index') }}"><div id="logo" class="col-xs-2"><img src="{{ asset('img/tinderbox_logowhite_small.svg') }}" alt="logo"></div></a>

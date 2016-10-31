@@ -1,4 +1,4 @@
-@extends('templates.dashboard.default')
+@extends('templates.auth.default')
 
 @section('body')
 
