@@ -10,7 +10,7 @@
 
 <div id="form-main">
   <div id="form-div">
-    <form class="form" id="form1" action="{{ route('dashboard.index') }}">
+    <form autocomplete="off" class="form" id="form1" action="{{ route('dashboard.index') }}">
       
       <p class="email">
         <input name="email" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="E-mail" id="email" />

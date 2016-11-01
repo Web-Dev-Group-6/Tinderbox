@@ -7,15 +7,15 @@
 </div>
 <div class="row">
     <div class="col-xs-offset-1 col-xs-11 nopadding">
-        <img class="underline" src="images/tinderbox_single_line.svg">
+        <img class="underline" src="{{ asset('img/tinderbox_single_line.svg') }}">
     </div>
 </div>
 </div>
 
 
 <div class="container">
-    <a href="groupmessage.html"><button id="group-button" class="message-button">Group Messages</button></a>
-    <a href="personalmessage.html"><button id="personal-button" class="message-button">Personal Messages</button></a>
+    <a href="#"><button id="group-button" class="message-button">Group Messages</button></a>
+    <a href="#"><button id="personal-button" class="message-button">Personal Messages</button></a>
 </div>
 
 <footer>
